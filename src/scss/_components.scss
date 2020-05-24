@@ -1,0 +1,88 @@
+@import "./vars";
+
+.search {
+  display: inline-block;
+
+  label {
+    font-size: 20px;
+  }
+
+  input {
+    height: 30px;
+    border: 1px solid rgba(160, 160, 160, 0.51);
+    color: $text-color;
+    margin: 0;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+}
+
+.btn {
+  display: block;
+  font-size: 100%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  line-height: 125%;
+  font-weight: 500;
+  outline: none;
+  padding: 0.75em 1.25em 0.675em;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: none;
+  transition: background-color .1s ease-in-out;
+  color: #fff;
+
+  &-primary {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  &-secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 5%);
+    }
+  }
+
+  &-center {
+    margin: 1rem auto;
+  }
+
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.vertical-divider {
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  color: $primary-color;
+}

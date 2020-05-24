@@ -1,0 +1,25 @@
+@import "./vars";
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.color-primary {
+  color: $primary-color;
+}

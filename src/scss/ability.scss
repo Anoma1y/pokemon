@@ -1,0 +1,27 @@
+@import "./vars";
+
+.ability {
+  color: $text-color;
+
+  &__title {
+    font-size: 34px;
+    font-weight: bold;
+    color: $primary-color;
+    cursor: default;
+  }
+
+  &__subtitle {
+    margin-bottom: 1rem;
+    font-size: 18px;
+    cursor: default;
+  }
+
+  &-effects {
+    padding: 1rem 0 2rem;
+    font-size: 16px;
+  }
+
+  &-pokemons {
+
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "sourceMap": true,
+      "strict": true,
+      "module": "esnext",
+      "allowJs": true,
+      "target": "es5",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "lib": ["es5", "es6", "dom", "es7", "es2017"],
+      "baseUrl": "./src",
+      "paths": {
+        "@app/*": ["./*"]
+      }
+    },
+    "include": [
+      "./src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  
