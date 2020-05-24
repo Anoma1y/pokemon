@@ -98,6 +98,10 @@ const Detail = () => {
             </header>
 
             {content}
+
+            <div className={'pokemon-detail__more'}>
+                <button className={'btn btn-primary'} onClick={() => history.replace('/pokemon')}>Explore more pokemon</button>
+            </div>
         </div>
     );
 };
