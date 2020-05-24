@@ -1,0 +1,19 @@
+version: '3.4'
+
+x-env: &x-env
+  HOME: /data/home
+
+services:
+  client:
+    build:
+      context: ./docker/client
+    volumes:
+      - ./:/data/client
+      - ./.home:/data/home
+    environment:
+      <<: *x-env
+    ports:
+      - 8081:8081
+    working_dir: /data/client
+    user: ${UID:?err}
+    command: ./build.sh
